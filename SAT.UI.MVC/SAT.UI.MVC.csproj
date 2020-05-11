@@ -183,29 +183,46 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\pic01.jpg" />
+    <Content Include="Content\images\pic02.jpg" />
+    <Content Include="Content\images\pic03.jpg" />
+    <Content Include="Content\images\pic04.jpg" />
+    <Content Include="Content\images\pic05.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.scrollex.min.js" />
+    <Content Include="Scripts\jquery.scrolly.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\skel.min.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="_Archive\assets\css\font-awesome.min.css" />
+    <Content Include="_Archive\assets\css\main.css" />
+    <Content Include="_Archive\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="_Archive\assets\js\jquery.min.js" />
+    <Content Include="_Archive\assets\js\jquery.scrollex.min.js" />
+    <Content Include="_Archive\assets\js\jquery.scrolly.min.js" />
+    <Content Include="_Archive\assets\js\main.js" />
+    <Content Include="_Archive\assets\js\skel.min.js" />
+    <Content Include="_Archive\assets\js\util.js" />
+    <Content Include="_Archive\CREDITS.txt" />
+    <Content Include="_Archive\elements.html" />
+    <Content Include="_Archive\generic.html" />
+    <Content Include="_Archive\images\banner.jpg" />
+    <Content Include="_Archive\images\pic01.jpg" />
+    <Content Include="_Archive\images\pic02.jpg" />
+    <Content Include="_Archive\images\pic03.jpg" />
+    <Content Include="_Archive\images\pic04.jpg" />
+    <Content Include="_Archive\images\pic05.jpg" />
+    <Content Include="_Archive\index.html" />
+    <Content Include="_Archive\LICENSE.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -251,6 +268,11 @@
     <Content Include="Views\RolesAdmin\Delete.cshtml" />
     <Content Include="Views\RolesAdmin\Create.cshtml" />
     <Content Include="Views\Account\DisplayEmail.cshtml" />
+    <Content Include="_Archive\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="_Archive\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="_Archive\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="_Archive\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="_Archive\assets\fonts\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,13 +282,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

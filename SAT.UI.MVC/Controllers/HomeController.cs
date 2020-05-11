@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace IdentitySample.Controllers
+namespace SAT.UI.MVC
 {
     public class HomeController : Controller
     {

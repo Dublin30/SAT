@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Collections.Generic;
 
-namespace IdentitySample.Controllers
+namespace SAT.UI.MVC
 {
     [Authorize(Roles = "Admin")]
     public class RolesAdminController : Controller

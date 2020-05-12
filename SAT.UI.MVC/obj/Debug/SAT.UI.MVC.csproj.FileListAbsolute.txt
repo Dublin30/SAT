@@ -66,6 +66,7 @@ C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MV
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Newtonsoft.Json.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Owin.dll
+C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Helpers.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Mvc.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Optimization.dll
@@ -74,6 +75,8 @@ C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MV
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.WebPages.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.WebPages.Razor.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\WebGrease.dll
+C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.pdb
+C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.dll.config
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Helpers.xml
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Mvc.xml
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\System.Web.Optimization.xml
@@ -98,11 +101,8 @@ C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MV
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.csprojAssemblyReference.cache
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.csproj.CoreCompileInputs.cache
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.csproj.CopyComplete
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.dll
 C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.pdb
-C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.dll
-C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.pdb
-C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\bin\SAT.DATA.dll.config
+C:\Users\Student\Documents\Visual Studio 2017\Projects\11_PMFD\SAT\src\SAT.UI.MVC\obj\Debug\SAT.UI.MVC.csprojAssemblyReference.cache

@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Classman.cs">
       <DependentUpon>SAT.tt</DependentUpon>
     </Compile>
@@ -60,6 +59,10 @@
     <Compile Include="Enrollment.cs">
       <DependentUpon>SAT.tt</DependentUpon>
     </Compile>
+    <Compile Include="MetaData\CoursesMetaData.cs" />
+    <Compile Include="MetaData\EnrollmentMetaData.cs" />
+    <Compile Include="MetaData\ScheduleClassMetaData.cs" />
+    <Compile Include="MetaData\StudentMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SAT.Context.cs">
       <AutoGen>True</AutoGen>

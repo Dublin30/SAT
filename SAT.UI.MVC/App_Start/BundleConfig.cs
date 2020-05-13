@@ -20,7 +20,8 @@ namespace IdentitySample
                 "~/Content/css/font-awesome.min.css",
                 "~/Content/css/main.css",
                 "~/Content/bootstrap.css",
-                "~/Content/bootstrap.min.css"
+                "~/Content/bootstrap.min.css",
+                "~/Content/css/Custom1.css"
                 ));
         }
     }

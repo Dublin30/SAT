@@ -9,6 +9,14 @@
 <div>
     <h4>Student</h4>
     <hr />
+    @if (Model.PhotoUrl == null || Model.PhotoUrl.Length == 0)
+    {
+        <img src="~/images/noImage.png" alt="No Image" style="width:300px" />
+    }
+    else
+    {
+        <img src="~/UploadedImages/@Model.PhotoUrl" alt="@Model.PhotoUrl" style="width: 300px" />
+    }
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.FirstName)
@@ -117,6 +125,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentID }) |
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Edit", "Edit", new { id = Model.StudentID })
+    }
     @Html.ActionLink("Back to List", "Index")
 </p>

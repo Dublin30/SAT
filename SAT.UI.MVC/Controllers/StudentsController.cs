@@ -37,6 +37,7 @@ namespace SAT.UI.MVC.Controllers
         }
 
         // GET: Students/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.ClassmanID = new SelectList(db.Classmans, "ClassmanID", "ClassmanName");
@@ -49,10 +50,13 @@ namespace SAT.UI.MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StudentID,FirstName,LastName,DOB,ClassmanID,GraduationYear,StreetAddress,City,State,ZipCode,Phone,Email,PhotoUrl,SSID")] Student student)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create([Bind(Include = "StudentID,FirstName,LastName,DOB,ClassmanID,GraduationYear,StreetAddress,City,State,ZipCode,Phone,Email,PhotoUrl,SSID")] Student student, HttpPostedFileBase PhotoUrl)
         {
             if (ModelState.IsValid)
             {
+                student.PhotoUrl = UploadImage(PhotoUrl);
+
                 db.Students.Add(student);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -64,6 +68,7 @@ namespace SAT.UI.MVC.Controllers
         }
 
         // GET: Students/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -85,10 +90,20 @@ namespace SAT.UI.MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "StudentID,FirstName,LastName,DOB,ClassmanID,GraduationYear,StreetAddress,City,State,ZipCode,Phone,Email,PhotoUrl,SSID")] Student student)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit([Bind(Include = "StudentID,FirstName,LastName,DOB,ClassmanID,GraduationYear,StreetAddress,City,State,ZipCode,Phone,Email,PhotoUrl,SSID")] Student student, HttpPostedFileBase PhotoUrl)
         {
             if (ModelState.IsValid)
             {
+                if (PhotoUrl != null)
+                {
+                    string oldImage = "~/UploadedImages/" + student.PhotoUrl;
+                    student.PhotoUrl = UploadImage(PhotoUrl);
+                    if (System.IO.File.Exists(oldImage))
+                    {
+                        System.IO.File.Delete(oldImage);
+                    }
+                }
                 db.Entry(student).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -99,6 +114,7 @@ namespace SAT.UI.MVC.Controllers
         }
 
         // GET: Students/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -131,6 +147,32 @@ namespace SAT.UI.MVC.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private string UploadImage(HttpPostedFileBase PhotoUrl)
+        {
+            string imageName = "NoImage.png";
+
+            if (PhotoUrl != null)
+            {
+                imageName = PhotoUrl.FileName;
+                // imageName is FastAndFurious.png
+                //then extension, after substring is ".jpeg"
+                string extension = imageName.Substring(imageName.LastIndexOf("."));
+                string[] goodExts = new string[] { ".jpeg", ".jpg", ".png", ".gif" };
+
+                if (goodExts.Contains(extension))
+                {
+                    imageName = Guid.NewGuid() + extension;
+                    PhotoUrl.SaveAs(Server.MapPath("~/UploadedImages/" + imageName));
+                }
+                else
+                {
+                    imageName = "NoImage.png";
+
+                }
+            }
+            return imageName;
         }
     }
 }

@@ -186,14 +186,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\Custom1.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\danforth-aerial.jpg" />
+    <Content Include="Content\images\NoImage.png" />
     <Content Include="Content\images\pic01.jpg" />
     <Content Include="Content\images\pic02.jpg" />
     <Content Include="Content\images\pic03.jpg" />
     <Content Include="Content\images\pic04.jpg" />
     <Content Include="Content\images\pic05.jpg" />
+    <Content Include="Content\UploadedImages\0bbcfd2d-f80f-4e6b-b87b-aa5f03810f3a.jpg" />
+    <Content Include="Content\UploadedImages\4e1d1253-bcc8-4f9c-9791-90acfd68db34.jpg" />
+    <Content Include="Content\UploadedImages\fa2ee24e-6403-45c8-aaad-3d25a72edebb.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

@@ -168,9 +168,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CoursController.cs" />
+    <Compile Include="Controllers\EnrollmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\ScheduleClassesController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,6 +182,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,8 +246,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -300,6 +303,23 @@
     <Content Include="Views\Students\Details.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Cours\Create.cshtml" />
+    <Content Include="Views\Cours\Delete.cshtml" />
+    <Content Include="Views\Cours\Details.cshtml" />
+    <Content Include="Views\Cours\Edit.cshtml" />
+    <Content Include="Views\Cours\Index.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Contact\EmailConfirmation.cshtml" />
+    <Content Include="Views\ScheduleClasses\Create.cshtml" />
+    <Content Include="Views\ScheduleClasses\Delete.cshtml" />
+    <Content Include="Views\ScheduleClasses\Details.cshtml" />
+    <Content Include="Views\ScheduleClasses\Edit.cshtml" />
+    <Content Include="Views\ScheduleClasses\Index.cshtml" />
+    <Content Include="Views\Enrollments\Create.cshtml" />
+    <Content Include="Views\Enrollments\Delete.cshtml" />
+    <Content Include="Views\Enrollments\Details.cshtml" />
+    <Content Include="Views\Enrollments\Edit.cshtml" />
+    <Content Include="Views\Enrollments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SAT.DATA\SAT.DATA.csproj">

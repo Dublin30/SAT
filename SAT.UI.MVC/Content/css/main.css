@@ -2372,8 +2372,8 @@
 	input[type="email"],
 	select,
 	textarea {
-		background: rgba(0, 0, 0, 0.075);
-		border-color: rgba(0, 0, 0, 0.1);
+		background: lightblue;
+		border-color: black;
 	}
 
 		input[type="text"]:focus,

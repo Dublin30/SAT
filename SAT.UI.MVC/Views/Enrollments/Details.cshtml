@@ -1,0 +1,55 @@
+﻿@model SAT.DATA.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enrollment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ScheduleClass.Cours.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScheduleClass.Cours.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScheduleClass.InstructorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScheduleClass.InstructorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.Email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+
+        @Html.ActionLink("Edit", "Edit", new { id = Model.EnrollmentID })
+        @:|
+    }
+    @Html.ActionLink("Back to List", "Index")
+</p>

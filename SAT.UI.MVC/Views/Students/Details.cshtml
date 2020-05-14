@@ -11,11 +11,11 @@
     <hr />
     @if (Model.PhotoUrl == null || Model.PhotoUrl.Length == 0)
     {
-        <img src="~/images/noImage.png" alt="No Image" style="width:300px" />
+        <img src="~/Content/images/NoImage.png" alt="No Image" style="width:300px" />
     }
     else
     {
-        <img src="~/UploadedImages/@Model.PhotoUrl" alt="@Model.PhotoUrl" style="width: 300px" />
+        <img src="~/Content/UploadedImages/@Model.PhotoUrl" alt="@Model.PhotoUrl" style="width: 300px" />
     }
     <dl class="dl-horizontal">
         <dt>
@@ -96,14 +96,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PhotoUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PhotoUrl)
         </dd>
 
         <dt>

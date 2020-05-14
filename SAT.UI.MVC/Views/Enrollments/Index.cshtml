@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SAT.DATA.Enrollment>
+
+@{
+    ViewBag.Title = "Enrollment";
+}
+
+<h2>@ViewBag.title</h2>
+
+<p>
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Create New", "Create")
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ScheduleClass.Cours.CourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScheduleClass.InstructorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScheduleClass.Cours.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScheduleClass.InstructorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.EnrollmentID })
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                @:|
+                @Html.ActionLink("Delete", "Delete", new { id = item.EnrollmentID })
+                @:|
+                @Html.ActionLink("Edit", "Edit", new { id = item.EnrollmentID })
+            }
+        </td>
+    </tr>
+}
+
+</table>

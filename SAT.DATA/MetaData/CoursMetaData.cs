@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SAT.DATA
 {
-    public class CoursesMetaData
+    public class CoursMetaData
     {
         [Required]
         public int CourseID { get; set; }
@@ -21,9 +21,10 @@ namespace SAT.DATA
         [StringLength(500)]
         public string Notes { get; set; }
         public string Curriculum { get; set; }
+        [Display(Name ="Active")]
         public Nullable<bool> IsActive { get; set; }
     }
-    [MetadataType(typeof(CoursesMetaData))]
+    [MetadataType(typeof(CoursMetaData))]
     public partial class Cours
     {
 

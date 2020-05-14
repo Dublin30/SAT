@@ -59,7 +59,7 @@
     <Compile Include="Enrollment.cs">
       <DependentUpon>SAT.tt</DependentUpon>
     </Compile>
-    <Compile Include="MetaData\CoursesMetaData.cs" />
+    <Compile Include="MetaData\CoursMetaData.cs" />
     <Compile Include="MetaData\EnrollmentMetaData.cs" />
     <Compile Include="MetaData\ScheduleClassMetaData.cs" />
     <Compile Include="MetaData\StudentMetadata.cs" />

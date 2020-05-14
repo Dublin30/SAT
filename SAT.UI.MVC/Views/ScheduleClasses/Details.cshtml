@@ -1,0 +1,65 @@
+﻿@model SAT.DATA.ScheduleClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ScheduleClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StarteDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StarteDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstructorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstructorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cours.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cours.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScheduledClassStatus.StatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScheduledClassStatus.StatusName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

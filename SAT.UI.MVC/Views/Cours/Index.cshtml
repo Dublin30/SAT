@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SAT.DATA.Cours>
+
+@{
+    ViewBag.Title = "Courses";
+}
+
+<h2>@ViewBag.title</h2>
+
+<p>
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Create New", "Create")
+    }
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreditHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreditHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.CourseID })
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        @:|
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CourseID })
+                        @:|
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CourseID })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('.table').DataTable();
+        });
+    </script>
+}

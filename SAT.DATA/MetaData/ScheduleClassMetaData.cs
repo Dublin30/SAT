@@ -26,7 +26,7 @@ namespace SAT.DATA
     }
 
     [MetadataType(typeof(ScheduleClassMetaData))]
-    public partial class ScheduledClassStatus
+    public partial class ScheduleClass
     {
 
     }

@@ -7,7 +7,7 @@
 <h2>@ViewBag.title</h2>
 
 <p>
-    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    @if (Request.IsAuthenticated && User.IsInRole("Admin, Scheduler"))
     {
         @Html.ActionLink("Create New", "Create")
     }

@@ -73,6 +73,7 @@ namespace SAT.UI.MVC.Controllers
             {
                 return HttpNotFound();
             }
+            //ViewBag.CourseID = new SelectList(db.Courses, "Active", "IsActive", cours.IsActive);
             return View(cours);
         }
 
@@ -90,6 +91,7 @@ namespace SAT.UI.MVC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            //ViewBag.CourseID = new SelectList(db.Courses, "Active", "IsActive", cours.IsActive);
             return View(cours);
         }
 

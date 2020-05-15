@@ -60,7 +60,7 @@ namespace SAT.UI.MVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ScheduleClassID = new SelectList(db.ScheduleClasses, "ScheduleClassesID", "InstructorName", enrollment.ScheduleClassID);
+            ViewBag.ScheduleClassID = new SelectList(db.ScheduleClasses, "CoursID", "CourseName", enrollment.ScheduleClass.Cours.CourseName);
             ViewBag.StudentID = new SelectList(db.Students, "StudentID", "FirstName", enrollment.StudentID);
             return View(enrollment);
         }
@@ -78,8 +78,8 @@ namespace SAT.UI.MVC.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.ScheduleClassID = new SelectList(db.ScheduleClasses, "ScheduleClassesID", "InstructorName", enrollment.ScheduleClassID);
-            ViewBag.CourseID = new SelectList(db.ScheduleClasses.Include("Cours"), "CourseID", "CourseName", enrollment.ScheduleClassID);
+            ViewBag.ScheduleClassID = new SelectList(db.Courses, "CourseID", "CourseName", enrollment.ScheduleClassID);
+            ViewBag.CourseID = new SelectList(db.ScheduleClasses, "ScheduleClassesID", "InstructorName", enrollment.ScheduleClassID);
             ViewBag.StudentID = new SelectList(db.Students, "StudentID", "FirstName", enrollment.StudentID);
             return View(enrollment);
         }
@@ -98,7 +98,7 @@ namespace SAT.UI.MVC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.ScheduleClassID = new SelectList(db.ScheduleClasses, "ScheduleClassesID", "InstructorName", enrollment.ScheduleClassID);
+            ViewBag.ScheduleClassID = new SelectList(db.ScheduleClasses, "ScheduleClassesID", "InstructorName", enrollment.ScheduleClass.Cours.CourseName);
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "CourseName", enrollment.ScheduleClass);
             ViewBag.StudentID = new SelectList(db.Students, "StudentID", "FirstName", enrollment.StudentID);
             return View(enrollment);
